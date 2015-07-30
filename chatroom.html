@@ -186,7 +186,7 @@
                 
                 var message = document.getElementById('textbox').value || 'blank message'; // textbox text will show up if present
                 console.log("sending message"); 
-                stompClient.send("/app/hello", {}, JSON.stringify({ 'name': message }));
+                stompClient.send("/app/hello", {}, JSON.stringify({ 'content': message }));
             }
             
             function showMessage(message){
